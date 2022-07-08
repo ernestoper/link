@@ -5,9 +5,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title> Victor Ernesto Alejo Juscamayta</title>
         <link rel="stylesheet" href="./index.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
 
-    </head>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+              VANTA.HALO({
+                el: "#vanta",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: true,
+                mouseControls: true,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                backgroundAlpha: 0.0,
+                color2: 0xff00f0,
+                wingSpan: 40.00,
+                separation: 100.00,
+                alignment: 77.00,
+                cohesion: 5.00,
+                quantity: 1.00
+              })
+            })
+            </script>
     <body>  
+        <div id="vanta"></div>
         <main>
             <header>
                 <img src="./images/eu.jpeg"/>
